@@ -1,17 +1,16 @@
 const s1 = "The sky is blue";
-let output1 = "";
+let output = "";
 
 function reverseWords(s1) {
     output += s1.split(" ").reverse().join(" ");
-    return output1;
+    return output;
 }
 
-console.log(reverseWords(s1));
+console.log('short form -',reverseWords(s1));
 
 
 //without using split, reverse, and join
 const s = "The sky is blue";
-let output = "";
 
 function reverseWords(s) {
     let word = "";
@@ -37,4 +36,4 @@ function reverseWords(s) {
     return result;
 }
 
-console.log(reverseWords(s)); // Output: "blue is sky The"
+console.log('long form -',reverseWords(s)); // Output: "blue is sky The"
